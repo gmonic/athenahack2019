@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>smartr news</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href = "map.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color:#a9bf50;
+            color: #ffffff;
+            padding: 100px 1px;
+        }
+
+        .bg-lightgreen {
+            background-color: #f4f9e0;
+        }
+
+         .bg-blue {
+            background-color: #5fb4d3;
+            display: block;
+          margin-left: auto;
+          margin-right:auto;
+          width=50%;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .logo {
+            color: #5cb85c;
+            font-size: 200px;
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: #a9bf50;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+          color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+          color: #f4511e !important;
+          background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+          border-color: transparent;
+          color: #fff !important;
+        }
+
+        .dropdown-menu {
+          background-color: #5fb4d3;
+        }
+
+        .fa {
+          padding: 20px;
+          font-size: 30px;
+          width: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 5px 2px;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+          background: #a9bf50;
+          color: white;
+        }
+
+        .fa-twitter {
+          background: #a9bf50;
+          color: white;
+        }
+
+        .fa-linkedin {
+          background: white;
+          color: #5fb4d3;
+        }
+
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        width=50%;
+
+        }
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+
+        tr:nth-child(even) {background-color: #edf2f2;}
+
+        .positive {
+          color: green;
+        }
+
+        .negative {
+          color: red;
+        }
+
+        .neutral {
+          color: orange;
+        }      
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+  <img src="static/images/logo_v2_padded.jpg" width="120" height="40">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">countries
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#recycle!">recycle!</a></li>
+          </ul>
+        </li>
+          <li><a href="#enter_location">Enter Location</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>  
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.facebook.com/Smartr-news-779942922387822/" class="fa fa-facebook"></a></li>
+          <li><a href="https://twitter.com/smartrnews" class="fa fa-twitter"></a></li>
+          <li><a href="mailto:smartrnews@gmail.com" class="fa fa-envelope"></a></li>
+          </ul>   
+      </div>    
+    </div>
+  </nav>
+
+
+  <div id="home" class="jumbotron text-center">
+  <img src="static/images/logo_v2_1.jpg" width="470" height="130">
+  <p style="text-align:center; color:white; font-size:120%"> Scan an image and recycle quickly! </p>
+   <p style="text-align:center; color:white; font-size:100%"> Get points and rewards for great recycling! </p>
+  <p></p>
+
+                  </div>
+        </div>
+    </form>
+  </div>
+
+
+
+
+  <div id="about" class="container-fluid bg-lightgreen">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>RecyclingRUs</h2>
+      <p> Scan your rubbish and we'll quickly tell you if you can recycle it, or a better, greener alternative!</p>
+      <p> Get points every time you recycle and earn rewards for great recycling habits! </p>
+      <a href="#contact" class="btn btn-success">Get in touch</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="recycle" class="container-fluid bg-lightgreen">
+  <div class="row">
+    <div class="col-sm-12">
+
+    </div>
+  </div>
+  </div>
+
+
+
+
+          <br>
+                  <div class="input-group-btn">
+          <input type="submit" value="Subscribe" class="btn btn-success" style="height:28px; font-size:10px">
+                  </div>
+        </div>
+    </form>
+  </div>
+
+</body>
+</html>
