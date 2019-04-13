@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "athenahack2019",
+  "private_key_id": "093aba2234d79b1f528c4f1737a782d92e664d28",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2B6cN0UK+kf8J\nXYvz1bbIhADAScJFL6JMZdvWzOFQ33ZRqMlybCuzC9SUbLUCBD7WP8fpkhxj90NT\nt+Keh7bk8/Sk70lO1GzEXA3Wq7vMhH7WLw7bdiZAkI03ggmys7WWTVmrKOsCUh69\n/zV42FlQn82yPSOXIdMul+lNpPyWUd8GPasRvY0p39skQ22gcOevmio+s/LiUevj\nakgLhGqAq2dJErHxj51VsbQVsgPOdvHWmL8ogmYvJddCGS6GYrJ8w+nkIF/NkUqk\nAOxudbzbTnS/KHv0i7y0auVDFAGNZjAMwLWhbHT4ptgTdIIGLAalcXovLbFOz+Ez\nuqUpBTjFAgMBAAECggEAA8mvenxhBu2rULLTY3jOQ6hpipbOVdm6pxvUggkD5Eau\nI99fB8RD+YcUvpzvfFIBy7wKiSv67sKZsk+IhfN9hRClhdwb2qnVdJWUzSOINiaI\nrCTRCpSQEbZgVegdEwylyfGknMjucP8r+BisMG5SF3kn0t5uU+oGhrjvCChXgDo9\nbXb93g8Bve3mo95u9zoTTeT+9/tcOtyHU3jVzqVctvhtqYtLPHe6nsLseLKpR2AC\nuTcLJKN3A+hO0fAZ2QmCPUG9tKvDIqa3wndzUzMINAu3ObYAgDHmrrRpLVpK0azG\nT15JujtBjzsqavbSxrQ3XunmsWKuVO8y5bb94fsgSQKBgQDaq8DR+S6CENp6Mcdz\nfVdZDiQAlv+v3V2JV0W+Spg/N4v2Nj5Ld8XX87DURaQDTQl3Rh4q7RXDintWzj0w\nczUApkdTj1u5sBTmRuqOgsAizDwEIywT9KxBDXIr60bFW8vkT9icFsfO9gnHhlFc\n9RprPJ9Lup0+R0R1bPPbC2rLiQKBgQDVGqHEG+oTsqQgvnkBMX/bgbpUdXmPbP7c\nqF0tKldVycbEYOGs9ihdP4yKGMU4BCpl64TKEqtZ4TD1cst3dJV/YsMtFb954IFW\nHAD1kYmxslrNEvTPlSyEaH2yfR3H3KSTg1pO2YjbyzHNjwQgUllZHucvkyOUR+EN\nRt4kXbUIXQKBgBBVKcbFJNskJR1hYHNY1lBZhQjiPmDFWPosIZJwAeUe4f5W2NpM\nLOPPWNLSDMkOVPmqrBAquyhqzIGUT++xezD8OnGcUI6S/0yf2V8hlvZCaO0qL12i\nNcd6GJ/9J8EP9S+tYxFthikIKXzUpHkb+Ygu8/r1Ck+fhRZ8N86RkL15AoGBAJ+3\n4SxZe5wd1PORrqGdVuXPGjc5AM3ldDMvoP478M8kduwybJI0wFX7Tjsmi5ILVTek\nSJcnXPP1WrtruWGjqHScMgp1dVhEUsuWG4Xx+ZCMS4/OOFvowz/ODP+c1Jg6H8NL\nvIDCe9e4OHCHUyFidwLbrYwzrIPzR5Kq3c3FyewlAoGBAIX5X7pA87WwT/s81LmT\njeAwZSVRktjbZ8Dk933XlmNPCkdyepdM+mfCwPymcL9lsKoFGQ4lWDtlXnH3nufc\n1neeH/Dno1B4lNbwfPcNwB3gu0jm44MEKKV3/I4EMZ6SKA7sMB/mezvK78ULwGbk\n7IYtABnCbMXyGSrtYJW0L8+d\n-----END PRIVATE KEY-----\n",
+  "client_email": "athenahack2019@athenahack2019.iam.gserviceaccount.com",
+  "client_id": "105971899737060130514",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/athenahack2019%40athenahack2019.iam.gserviceaccount.com"
+}
