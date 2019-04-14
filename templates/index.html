@@ -105,6 +105,7 @@
         table {
           border-collapse: collapse;
           width: 100%;
+          background-color: #edf2f2
         }
 
         th, td {
@@ -124,7 +125,16 @@
 
         .neutral {
           color: orange;
-        }      
+        }    
+
+        .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/recyle_header.jpg");
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
     </style>
 </head>
 
@@ -138,22 +148,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span> 
         </button>
-  <img src="static/images/logo_v2_padded.jpg" width="120" height="40">
+  <img src="static/logo2.jpg" width="100" height="40">
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-left">
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">countries
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#recycle!">recycle!</a></li>
+          <li><a href="#home">can i recycle this?</a></li>
+          <li><a href="#rewards">rewards</a></li>
+          <li><a href="#map">who's recycling the most?</a></li>
+          
           </ul>
-        </li>
-          <li><a href="#enter_location">Enter Location</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
       </div>  
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
@@ -166,47 +169,120 @@
   </nav>
 
 
+
+
+
   <div id="home" class="jumbotron text-center">
-  <img src="static/images/logo_v2_1.jpg" width="470" height="130">
-  <p style="text-align:center; color:white; font-size:120%"> Scan an image and recycle quickly! </p>
-   <p style="text-align:center; color:white; font-size:100%"> Get points and rewards for great recycling! </p>
+  <img src="static/logo2.jpg" width="470" height="230">
+  <p style="text-align:center; color:white; font-size:120%"> Can I recycle this? Find out here! </p>
+   <p style="text-align:center; color:white; font-size:100%"> Can I get a reward for being a recycler? Here you can! </p>
 
+
+
+  </div>
+
+
+
+  <div id="home" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+  <h4> Is your item recyclable? Take a photo with your smartphone and upload here! </h4>
 <form method='post' enctype='multipart/form-data'>
-      <p><input type='file' name='file'>
-         <input type='submit' value='Upload'>
+      <input type='file' name='file' onchange="loadFile(event)">
+      <br>
+      <p id="demo"></p>
+<img id="output" width="200"/>	
+<br>
+         <input type='submit' style='background-color:green; color:white' value='Upload'>
     </form>
-
-
-
-
-
-                  </div>
-        </div>
-    </form>
-  </div>
-
-
-
-
-  <div id="about" class="container-fluid bg-lightgreen">
-  <div class="row">
-    <div class="col-sm-12">
-      <h2>RecyclingRUs</h2>
-      <p> Scan your rubbish and we'll quickly tell you if you can recycle it, or a better, greener alternative!</p>
-      <p> Get points every time you recycle and earn rewards for great recycling habits! </p>
-      <a href="#contact" class="btn btn-success">Get in touch</a>
     </div>
   </div>
   </div>
 
-  <div id="recycle" class="container-fluid bg-lightgreen">
+
+  <div id="rewards" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+
+<script>
+var loadFile = function(event) {
+  document.getElementById("demo").innerHTML = "Want to upload this? Click upload";
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+{% if object is defined %}
+        {% set object = object %}
+        {% set new_name = object.name %}
+              <tr>
+          <h4> {{ 'This fits in the category of: ' + object.name }} </h4>
+              
+<br>
+<br>
+{% if new_name == "Bag" %}
+<table>
+    <tr>
+          <th style="color:green"> <s> {{ 'recyclable' }} </s> </th>
+          <th style="color:green">  <s> {{ 'reusable' }} </s> </th>
+          <th style="color:green">  <s> {{ 'compostable' }} </s> </th>
+           <th style="color:red"> <b> {{ 'landfill' }} </b> </th>
+      </tr>
+      <tr style="text-align:center">
+          <td><img src="/static/greenbin.jpg" height="50" width="30"</td>
+          <td><img src="/static/greenbin.jpg" height="50" width="30"</td>
+          <td><img src="/static/greenbin.jpg" height="50" width="30"</td>
+          <td><img src="/static/redbin.jpg" height="50" width="30"</td>
+      </tr>
+    </table>
+      <br>
+      <br>
+          {{ 'This is a single-use plastic bag. 5 trillion of these are used each year worldwide. Around 80% contributed to ocean debris. Why not opt for a reusable bag like this one?' }}
+                <br>
+                <br>
+                <img src="static/reusablebag.jpg" width="120" height="70">
+              </tr>  
+             
+  {% endif %}
+{% if new_name == "Luggage & bags" %}
+<table>
+    <tr>
+          <th style="color:green"> <b> {{ 'recyclable' }} </b> </th>
+          <th style="color:green">  <b> {{ 'reusable' }} </b> </th>
+          <th style="color:green">  <s> {{ 'compostable' }} </s> </th>
+           <th style="color:red"> <s> {{ 'landfill' }} </s> </th>
+      </tr>
+      <tr style="text-align:center">
+          <td><img src="/static/greenbin.jpg" height="50" width="30"</td>
+          <td><img src="/static/greenbin.jpg" height="50" width="30"</td>
+          <td><img src="/static/greenbin.jpg" height="50" width="30"</td>
+          <td><img src="/static/redbin.jpg" height="50" width="30"</td>
+      </tr>
+    </table>
+      <br>
+      <br>
+          {{ 'Great! This is both recyclable and reusable. You are awesome. Thanks for helping to save plastic from getting into the oceans.' }}
+                <br>
+                <br>
+              </tr>  
+             
+  {% endif %}
+
+
+
+
+
+{% endif %}
+    </div>
+  </div>
+  </div>
+
+  <div id="map" class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
 
     </div>
   </div>
   </div>
-
 
 
 

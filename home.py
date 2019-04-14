@@ -50,21 +50,22 @@ def homepage():
             print('file:')
             print(file)   
             path = "/Users/monicagupta/athenahack2019/static/" + file.filename
+            file_name = file.filename
             with open(path, 'rb') as image_file:
                 content = image_file.read()
             image = vision.types.Image(content=content)  
             
             objects = client.object_localization(
                 image=image).localized_object_annotations
-
-            print('Number of objects found: {}'.format(len(objects)))
-            object_list=[]
             for object_ in objects:
-                object_list.append(object_)
+                print('Number of objects found: {}'.format(len(objects)))
                 print('\n{} (confidence: {})'.format(object_.name, object_.score))
                 print('Normalized bounding polygon vertices: ')
                 for vertex in object_.bounding_poly.normalized_vertices:
                     print(' - ({}, {})'.format(vertex.x, vertex.y))
+
+            object = objects[0]
+
             # content = file.read()
             # print('content:')
             # print(content)
@@ -76,9 +77,9 @@ def homepage():
             #     print('Normalized bounding polygon vertices: ')
             # for vertex in object_.bounding_poly.normalized_vertices:
             #     print(' - ({}, {})'.format(vertex.x, vertex.y))
-            return 'file uploaded successfully'
+            return render_template("index.html", object=object, file_name=file_name, path=path)
         
-        return render_template("index.html", object_list=object_list)
+        return render_template("index.html")
     else:
         return render_template("index.html")
 
